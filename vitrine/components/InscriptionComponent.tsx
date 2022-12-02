@@ -1,14 +1,17 @@
+import Link from "next/link";
+
 const InscriptionComponent: React.FC = () => {
   return (
-    <div>      
+    <div className="divInscription">
       <p>
-      <span style={{color:"#C00000"}}>▷</span> Depuis 2008, RIDE, agence de location de voitures de luxe propose ses
-        services partout en France <br></br>
-        (Paris, Monaco, Nice, Cannes, Saint-Tropez,Courchevel, Saint-Moritz...). <br></br>
-        Notre expérience est à votre service pour
-        répondre à toutes vos demandes
+        <span style={{ color: "#C00000" }}>▷</span> Depuis 2008, RIDE, agence de
+        location de voitures de luxe propose ses services partout en France{" "}
+        <br></br>
+        (Paris, Monaco, Nice, Cannes, Saint-Tropez,Courchevel, Saint-Moritz...).{" "}
+        <br></br>
+        Notre expérience est à votre service pour répondre à toutes vos demandes
       </p>
-      <hr style={{color:"#C00000"}}></hr>
+      <hr className="ligne"></hr>
       <h3 className="titre">INSCRIPTION</h3>
       <p>Je suis :</p>
       <div
@@ -34,7 +37,7 @@ const InscriptionComponent: React.FC = () => {
           <label className="form-check-label">Un particulier</label>
         </div>
       </div>
-      <form className="row g-3 needs-validation">
+      <form className="row g-3 needs-validation form-inline">
         <div className="col-md-6">
           <label className="form-label">Nom</label>
           <input
@@ -301,21 +304,23 @@ const InscriptionComponent: React.FC = () => {
             </label>
           </div>
         </div>
-        <div className="col-md-6"></div>
-        <div className="col-md-6">
-          <button
-            className="btn"
-            type="submit"
-            style={{
-              backgroundColor: "#C00000",
-              color: "white",
-              width: "343px",
-              height: "44px",
-              border: "none",
-            }}
-          >
-            Demander mon inscripton
-          </button>
+        {/* <div className="col-md-6"></div> */}
+        <div className="col-md-12">
+          <Link href={"/success"}>
+            <button
+              type="submit"
+              style={{
+                backgroundColor: "#C00000",
+                color: "white",
+                width: "50%",
+                height: "60px",
+                marginLeft: "50%",
+                border: "none",
+              }}
+            >
+              Demander mon inscripton
+            </button>
+          </Link>
         </div>
       </form>
     </div>

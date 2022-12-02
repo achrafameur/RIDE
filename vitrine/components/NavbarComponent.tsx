@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 const NavbarComponent: React.FC = () => {
   return (
-      <nav className="navbar navbar-white bg-white justify-content-between">
+      <nav className="navSec navbar navbar-white bg-white justify-content-between">
         <a className="navbar-brand" style={{marginLeft:"10px"}}>
           <svg
             width="144"
@@ -22,6 +24,7 @@ const NavbarComponent: React.FC = () => {
           </svg>
         </a>
         <form className="form-inline">
+          <Link href={"login"} >
           <button
             style={{
               background: "#C00000",
@@ -34,6 +37,7 @@ const NavbarComponent: React.FC = () => {
           >
             Connexion admin
           </button>
+          </Link>
         </form>
       </nav>
   );

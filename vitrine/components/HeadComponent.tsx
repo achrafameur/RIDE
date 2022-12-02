@@ -5,7 +5,7 @@ const HeadComponent: React.FC = () => {
     <Head>
       <title>Ride</title>
       <meta name="description" content="" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/images/logo_car.png" />
     </Head>
   );
 };

@@ -1,16 +1,16 @@
-import { InputTextComponent } from "../../my-lib-ui";
-import { RadioButtonComponent } from "../../my-lib-ui";
 import type { NextPage } from "next";
-
+import Link from "next/link";
+import { useRouter } from "next/router";
 import FooterComponent from "../components/FooterComponent";
 import HeadComponent from "../components/HeadComponent";
 import NavbarComponent from "../components/NavbarComponent";
-import InscriptionComponent from "../components/InscriptionComponent";
+import SuccessComponent from "../components/SuccessComponent";
 
-const Home: NextPage = () => {
+const Success: NextPage = () => {
+  const router = useRouter();
   return (
-      <main>
-        <HeadComponent />
+    <div>
+      <HeadComponent />
         <div>
         <NavbarComponent />
         <img
@@ -22,12 +22,12 @@ const Home: NextPage = () => {
             zIndex: -1,
           }}
         />
-        <InscriptionComponent />
+        <SuccessComponent />
         </div>
         <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
         <FooterComponent />
-      </main>
+    </div>
   );
 };
 
-export default Home;
+export default Success;
