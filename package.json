@@ -2,5 +2,24 @@
   "dependencies": {
     "bootstrap": "^5.2.3",
     "react-bootstrap": "^2.6.0"
-  }
+  },
+  "name": "package.json",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install:all": " npm install --prefix my-lib-ui && npm run yalc:build --prefix my-lib-ui && npm install --prefix vitrine && cd vitrine && yalc add my-lib-ui"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achrafameur/RIDE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/achrafameur/RIDE/issues"
+  },
+  "homepage": "https://github.com/achrafameur/RIDE#readme",
+  "description": ""
 }
